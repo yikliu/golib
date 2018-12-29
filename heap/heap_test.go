@@ -1,7 +1,7 @@
 package heap
 
 import (
-	"github.com/yikliu/golib/arraylist"
+	"golib/arraylist"
 	"testing"
 )
 

@@ -1,7 +1,7 @@
 package heap
 
 import (
-	array "github.com/yikliu/golib/arraylist"
+	array "golib/arraylist"
 )
 
 type Heap struct {
@@ -62,5 +62,4 @@ func (heap *Heap) Heapify(i int, upto int) {
 		heap.data.Swap(largest, i)
 		heap.Heapify(largest, upto)
 	}
-
 }
