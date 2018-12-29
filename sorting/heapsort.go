@@ -2,8 +2,8 @@ package sorting
 
 import (
 	"fmt"
-	array "github.com/yikliu/golib/arraylist"
-	"github.com/yikliu/golib/heap"
+	array "golib/arraylist"
+	"golib/heap"
 )
 
 func HeapSort(arr *array.List) {

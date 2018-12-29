@@ -2,7 +2,7 @@ package sorting
 
 import (
 	"fmt"
-	array "github.com/yikliu/golib/arraylist"
+	array "golib/arraylist"
 )
 
 func MergeSort(arr *array.List, left int, right int) {

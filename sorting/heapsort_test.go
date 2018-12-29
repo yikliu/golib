@@ -1,7 +1,7 @@
 package sorting
 
 import (
-	array "github.com/yikliu/golib/arraylist"
+	array "golib/arraylist"
 	"testing"
 )
 

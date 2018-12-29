@@ -2,7 +2,7 @@ package arraylist
 
 import (
 	"fmt"
-	"github.com/yikliu/golib/comparable"
+	"golib/comparable"
 )
 
 type List struct {
@@ -160,14 +160,14 @@ func (list *List) add(elements []interface{}) {
 
 func (list *List) grow(n int) {
 	curSize := list.Size()
-	newElements := make([]interface{}, curSize, (curSize+n)*2)
+	newElements := make([]interface{}, curSize, (curSize + n) * 2)
 	copy(newElements, list.elements)
 	list.elements = newElements
 }
 
 func (list *List) shrink() {
 	curSize := list.Size()
-	newElements := make([]interface{}, curSize, (curSize+1)*2)
+	newElements := make([]interface{}, curSize, (curSize + 1) * 2)
 	copy(newElements, list.elements)
 	list.elements = newElements
 }
