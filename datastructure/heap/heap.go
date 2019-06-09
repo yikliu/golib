@@ -1,7 +1,7 @@
 package heap
 
 import (
-	array "golib/arraylist"
+	array "golib/datastructure/arraylist"
 )
 
 type Heap struct {

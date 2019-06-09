@@ -1,7 +1,7 @@
 package stack
 
 import (
-	"golib/arraylist"
+	"golib/datastructure/arraylist"
 )
 
 type Stack struct {

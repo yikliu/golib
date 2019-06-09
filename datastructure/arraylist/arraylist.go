@@ -2,7 +2,7 @@ package arraylist
 
 import (
 	"fmt"
-	"golib/comparable"
+	"golib/datastructure/comparable"
 )
 
 type List struct {

@@ -1,7 +1,7 @@
 package sorting
 
 import (
-	array "golib/arraylist"
+	array "golib/datastructure/arraylist"
 	"math/rand"
 )
 

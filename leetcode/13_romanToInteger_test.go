@@ -54,7 +54,7 @@ import (
 	"testing"
 )
 
-func TestSolution(t *testing.T) {
+func TestRomanToInteger(t *testing.T) {
 	data := map[string]int{
 		"MCMXCIV": 1994,
 		"LVIII":   58,

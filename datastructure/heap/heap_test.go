@@ -1,7 +1,7 @@
 package heap
 
 import (
-	"golib/arraylist"
+	"golib/datastructure/arraylist"
 	"testing"
 )
 

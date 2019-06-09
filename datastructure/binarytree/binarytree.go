@@ -1,7 +1,7 @@
 package binarytree
 
 import (
-	"golib/comparable"
+	"golib//datastructure/comparable"
 )
 
 type BTNode struct {
