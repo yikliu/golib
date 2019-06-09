@@ -3,7 +3,7 @@ package sorting
 import (
 	"fmt"
 	array "golib/datastructure/arraylist"
-	"golib/heap"
+	"golib/datastructure/heap"
 )
 
 func HeapSort(arr *array.List) {
