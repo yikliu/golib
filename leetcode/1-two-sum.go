@@ -3,6 +3,8 @@
  *
  * [1] Two Sum
  */
+package leetcode
+
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	var num int
@@ -19,4 +21,3 @@ func twoSum(nums []int, target int) []int {
 	}
 	return []int{}
 }
-

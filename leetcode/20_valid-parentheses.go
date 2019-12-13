@@ -1,9 +1,6 @@
-/*
- * @lc app=leetcode id=20 lang=golang
- *
- * [20] Valid Parentheses
- */
-func isValid(s string) bool {
+package leetcode
+
+func isValidParentheses(s string) bool {
 	stk := make(stack, 0)
 	mapping := map[rune]rune{
 		'{': '}',
@@ -43,4 +40,3 @@ func (s stack) pop() (stack, rune) {
 func (s stack) empty() bool {
 	return len(s) == 0
 }
-

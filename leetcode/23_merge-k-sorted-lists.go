@@ -1,3 +1,5 @@
+package leetcode
+
 /*
  * @lc app=leetcode id=23 lang=golang
  *
@@ -44,4 +46,3 @@ func mergeKLists(lists []*ListNode) *ListNode {
 	}
 	return head.Next
 }
-

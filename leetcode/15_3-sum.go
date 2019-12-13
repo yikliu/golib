@@ -1,10 +1,6 @@
-import "sort"
+package leetcode
 
-/*
- * @lc app=leetcode id=15 lang=golang
- *
- * [15] 3Sum
- */
+import "sort"
 
 func threeSum(nums []int) [][]int {
 	if len(nums) < 3 {
@@ -54,4 +50,3 @@ func threeSum(nums []int) [][]int {
 	}
 	return res
 }
-
