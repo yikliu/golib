@@ -7,11 +7,8 @@ import (
 
 func TestLetterCombination(t *testing.T) {
 	digits := "23"
-
 	res := letterCombinations(digits)
-
 	expected := []string{"ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"}
-
 	if len(res) != len(expected) {
 		t.Errorf("Res was incorrect")
 	}
