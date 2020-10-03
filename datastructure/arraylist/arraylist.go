@@ -6,36 +6,36 @@ import (
 )
 
 type List struct {
-	elements []interface{}
-	//size     int
+    elements []interface{}
+    //size     int
 }
 
 func New() *List {
-	return &List{}
+    return &List{}
 }
 
 func NewWithElements(elements ...interface{}) *List {
-	list := List{}
-	list.add(elements)
-	return &list
+    list := List{}
+    list.add(elements)
+    return &list
 }
 
 func (list *List) Add(elements ...interface{}) {
-	list.add(elements)
+    list.add(elements)
 }
 
 func (list *List) Remove(index int) error {
-	if !list.withinRange(index) {
-		return fmt.Errorf("golib/Arraylist/Remove: Invalid index %d", index)
-	}
+    if !list.withinRange(index) {
+        return fmt.Errorf("golib/Arraylist/Remove: Invalid index %d", index)
+    }
 
-	list.elements = append(list.elements[:index], list.elements[index+1:]...)
+    list.elements = append(list.elements[:index], list.elements[index+1:]...)
 
-	if (len(list.elements)+1)*2 < cap(list.elements) {
-		list.shrink()
-	}
+    if (len(list.elements)+1)*2 < cap(list.elements) {
+        list.shrink()
+    }
 
-	return nil
+    return nil
 }
 
 func (list *List) Get(index int) (interface{}, error) {

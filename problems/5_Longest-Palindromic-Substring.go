@@ -14,5 +14,11 @@ Input: "cbbd"
 Output: "bb"
 */
 func longestPalindrome(s string) string {
-
+	length = len(s)
+	var longest string
+	dp := make([][]int, length + 1)
+	for 
+	for i := 0; i < length; i++ {
+		
+	}
 }
