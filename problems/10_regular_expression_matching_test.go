@@ -68,21 +68,21 @@ func isRegMatch(s string, p string) bool {
 	size_s := len(s)
 	size_p := len(p)
 
-	dp := make([][]int, size_p+1)
+	dp := make([][]int, size_p + 1)
 	for i := range dp {
-		dp[i] = make([]int, size_s+1)
+		dp[i] = make([]int, size_s + 1)
 	}
 
 	dp[0][0] = 1
 
-	for j := 0; j < size_p+1; j++ {
+	for j := 0; j < size_p + 1; j++ {
 		if j > 1 && p[j-1] == '*' && dp[j-2][0] == 1 {
 			dp[j][0] = 1
 		}
 	}
 
-	for i := 1; i < len(p)+1; i++ {
-		for j := 1; j < len(s)+1; j++ {
+	for i := 1; i < len(p) + 1; i++ {
+		for j := 1; j < len(s) + 1; j++ {
 			if p[i-1] == s[j-1] || p[i-1] == '.' {
 				dp[i][j] = dp[i-1][j-1]
 			} else if p[i-1] == '*' {
